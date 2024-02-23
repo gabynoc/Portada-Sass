@@ -1,0 +1,75 @@
+$Imagen:url(https://media.vogue.es/photos/643674f15bb1faf8ba57d6b6/2:3/w_1920,c_limit/GettyImages-1235152164.jpg);
+$color1:aqua;
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.Imagen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+    .Portada {
+        background-image:$Imagen;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30%;
+        height: 100%;
+
+        .Titulo { 
+            width: 100%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            h1{ 
+                color: steelblue;
+                font-size: 10rem;
+            }
+        }
+        .Contenedor {
+            width: 100%;
+            height: 70%;
+            display: grid;
+            grid-template-columns: 50% , 50%;
+            grid-template-areas: "Resumen Subtitulo";
+
+            .Resumen {
+                width: 60%;
+                height: 100%;
+                //background-color: white;
+               .ptitulo{ 
+                    font-size: 2rem;
+                    color: rgb(178, 242, 253);
+               } 
+               .ptexto{
+                    font-size: 1.5rem;
+                    color: rgb(255, 255, 255);
+               }
+            }
+            .Subtitulo {
+                width: 100%;
+                height: 100%;
+                text-align: right;
+              
+                .Estilo {
+                    font-size: 2.1rem;
+                    color: $color1;
+                    margin-top: 200%;
+                }
+                .Sugerencia {   
+                    font-size: 0.9rem;
+                    color: $color1;
+                    margin-right: 5%;
+                }
+            }
+        
+        }
+
+    }
+
+}
